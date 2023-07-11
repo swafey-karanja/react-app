@@ -1,5 +1,5 @@
 import ListGroup from "./components/ListGroup";
-
+import Alert from "./components/alert";
 function App(){
 
     let items = [
@@ -13,7 +13,19 @@ function App(){
 const handleSelectItem = (item:string) => {
   console.log(item);
 }
-return <div><ListGroup items = {items} heading = "Anime" onSelectItem={handleSelectItem} /></div>
+return (
+<div>
+  
+<ListGroup items = {items} heading = "Anime" onSelectItem=  {handleSelectItem} />
+  
+<Alert>
+    <span>
+      mugiwara no luffy
+    </span>
+
+  </Alert>
+  </div>
+  );
 }
 
 
